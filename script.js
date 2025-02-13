@@ -5,9 +5,16 @@
 
 
 // Ai below for testing purposes
-// Seems to add the generic "save as___" and "select a file for notes" functionality
-
 let notesFolder = null; // Store the selected folder handle
+
+document.addEventListener("DOMContentLoaded", function() {
+    let editorContainer = document.getElementById("editor-container");
+    if (editorContainer) {
+        editorContainer.style.border = "1px solid #ccc";
+        editorContainer.style.padding = "10px";
+        editorContainer.style.backgroundColor = "#fff";
+    }
+});
 
 async function chooseFolder() {
     try {
