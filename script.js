@@ -53,7 +53,7 @@ async function saveNote(format) {
 }
 
 // Initialize Quill editor
-var quill = new Quill('#editor-container', {
-    theme: 'snow',
-    placeholder: 'Start typing your notes here...'
-});
+//var quill = new Quill('#editor-container', {
+  //  theme: 'snow',
+ //  placeholder: 'Start typing your notes here...'
+//});

@@ -33,14 +33,31 @@
         </div>
     </nav>
 
+    <!-- Sidebar Toggle Button -->
+    <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+        Toggle Sidebar
+    </button>
+
+    <!-- Sidebar -->
+    <div class="collapse show" id="sidebar">
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Sidebar</div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
       <div class="container mt-4">
         <h2>Text Editor</h2>
         <button class="btn btn-primary mt-3" onclick="getEditorContent()">Get Content</button>
         <div id="editor-container" style="height: 200px;"></div> <!-- Added Quill editor -->
-        <div class="mt-3">
-            <h4>Output</h4>
-        </div>
       </div>
 
       <!-- Footer -->
