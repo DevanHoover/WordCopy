@@ -3,9 +3,9 @@ body {
 }
 
 #editor-container {
-    border: 1px solid #E31C79;
+    border: 1px solid #ff007f;
     padding: 10px;
-    background-color: #fff;
+    background-color: #ff007f;
     border-radius: 5px;
 }
 
@@ -13,7 +13,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color:#ff007f;
+    ;
     padding: 10px 0;
 }
 
@@ -23,8 +24,8 @@ footer {
     height: 100%;
     z-index: 1000;
     overflow-y: auto;
-    background: #f8f9fa;
-    border-right: 1px solid #dee2e6;
+    background: #ff00e6;
+    border-right: 1px solid #ff00e6;
 }
 
 .sidebar-heading {
@@ -43,7 +44,7 @@ footer {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: #ff00e6; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
@@ -53,13 +54,13 @@ footer {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #E31C79;
+    color: #ff00e6;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ff00e6;
   }
   
   /* Style page content */
@@ -72,5 +73,62 @@ footer {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+  
+
+  .circle {
+    display:inline-block;
+    width:0px;
+    height:0px;
+    border-radius:50%;
+    border-color:orange;
+    border-style:solid;
+    border-width:0px;
+    box-sizing:border-box;
+  }
+  
+  body:hover .circle {
+    animation:change 1s forwards;
+  }
+  
+  @keyframes change {
+     50% {
+      border-width:25px;
+     }
+     100% {
+      border-width:0;
+      width:50px;
+      height:50px;
+     }
+  
+  }
+  
+  body {
+   min-height:100px;
+  }
+  
+
+  
+  .magic i{
+    color:red;
+    filter:grayscale(100%);
+  }
+  .magic:hover i{
+    animation:change 1s forwards;
+  }
+  
+  
+  @keyframes change{
+    50% {
+      transform:scale(0);
+    filter:grayscale(100%);
+    }
+    51% {
+      filter:grayscale(0%);
+    }
+    100% {
+      transform:scale(1);
+      filter:grayscale(0%);
+    }
   }
   
