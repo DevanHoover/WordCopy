@@ -5,6 +5,8 @@
 
 
 // Ai below for testing purposes
+// Seems to add the generic "save as___" and "select a file for notes" functionality
+
 let notesFolder = null; // Store the selected folder handle
 
 async function chooseFolder() {
